@@ -67,17 +67,7 @@ static NSString* cellStr = @"collectionCell";
     cell.canScroll = NO;
     return cell;
 }
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-//{
-//    UICollectionReusableView* resuview = (UICollectionReusableView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerStr forIndexPath:indexPath];
-//    resuview.backgroundColor = [UIColor blueColor];
-//    resuview.frame = CGRectMake(0, 0, ScreenWidth, 80);
-//    return resuview;
-//}
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-//{
-//    return  CGSizeMake(ScreenWidth, 80);
-//}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     NSInteger interg = [self getCurrentCount:scrollView];
